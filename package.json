@@ -1,0 +1,58 @@
+{
+  "name": "pi-pstack-skills",
+  "version": "0.1.0",
+  "description": "pstack for pi: 55 rigorous engineering skills, three subagents, and bare-name commands like /bro and /poteto-mode.",
+  "license": "MIT",
+  "author": "slappcard",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/slappcard/pi-pstack-skills.git"
+  },
+  "homepage": "https://github.com/slappcard/pi-pstack-skills",
+  "bugs": {
+    "url": "https://github.com/slappcard/pi-pstack-skills/issues"
+  },
+  "keywords": [
+    "pi-package",
+    "pi",
+    "pstack",
+    "skills",
+    "subagents",
+    "poteto-mode"
+  ],
+  "files": [
+    "agents",
+    "docs",
+    "extensions",
+    "skills",
+    "LICENSE",
+    "README.md"
+  ],
+  "pi": {
+    "skills": [
+      "./skills"
+    ],
+    "extensions": [
+      "./extensions/pstack-aliases.ts"
+    ],
+    "subagents": {
+      "agents": [
+        "./agents"
+      ]
+    }
+  },
+  "pi-subagents": {
+    "agents": [
+      "./agents"
+    ]
+  },
+  "peerDependencies": {
+    "@earendil-works/pi-coding-agent": "*"
+  },
+  "engines": {
+    "node": ">=22.19"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
